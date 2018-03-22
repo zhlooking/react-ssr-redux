@@ -1,5 +1,5 @@
 import React from 'react';
-import './post.scss'
+import '../../assets/scss/post.scss'
 
 export default ({ posts }) => {
   return (

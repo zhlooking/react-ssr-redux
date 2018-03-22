@@ -5,7 +5,7 @@ const autoprefixer = require("autoprefixer");
 const path = require('path');
 
 module.exports = {
-  entry: './server.js',
+  entry: 'server.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'server.js',
@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: 'production'
+        NODE_ENV: 'development'
       }
     }),
     new ExtractTextPlugin({
@@ -43,7 +43,7 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           use: [{
             loader: 'css-loader',
-            options: { minimize: true }
+            options: { importLoaders: 1 }
           }, {
             loader: 'postcss-loader',
             options: { plugins: [autoprefixer()] }

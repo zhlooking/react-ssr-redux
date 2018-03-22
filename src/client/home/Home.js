@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "./logo.png";
-import wizards from "./wizards.jpg";
-import "./home.css";
+import logo from "../../assets/img/logo.png";
+import wizards from "../../assets/img/wizards.jpg";
+import "../../assets/scss/home.css";
 
 export default class Home extends Component {
   render() {
