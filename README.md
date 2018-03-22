@@ -13,3 +13,7 @@ ReactRouter4 + Express + Axios + Redux + Scss + Image loader
 2. `npm run build`
 3. `npm run start`
 4. `open http://localhost:3000`
+
+##TODO
+1. Add Layout Structure.
+2. Polish CSS Styles.
