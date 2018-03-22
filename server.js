@@ -1,6 +1,5 @@
 import express from 'express';
 import React from 'react';
-import path from 'path';
 import ReactDomServer from 'react-dom/server';
 import { StaticRouter, matchPath } from 'react-router-dom';
 import { Provider } from 'react-redux';

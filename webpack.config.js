@@ -28,16 +28,26 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: [
-            {
+          use: [{
               loader: "css-loader",
               options: { importLoaders: 1 }
-            },
-            {
+            }, {
               loader: "postcss-loader",
               options: { plugins: [autoprefixer()] }
             }
           ]
+        })
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          use: [{
+            loader: 'css-loader',
+            options: { minimize: true }
+          }, {
+            loader: 'postcss-loader',
+            options: { plugins: [autoprefixer()] }
+          }, 'sass-loader']
         })
       },
       {
