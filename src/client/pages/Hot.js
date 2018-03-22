@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../../actions'
+import { Link } from "react-router-dom";
 import PostList from './PostList';
 
 
@@ -18,7 +19,14 @@ class HotPosts extends React.Component {
   render() {
     const { posts } = this.props;
 
-    return <PostList posts={posts} />
+    return (
+      <div>
+        <p>
+          <Link to="/latest">Latest</Link>
+        </p>
+        <PostList posts={posts} />
+      </div>
+    )
   }
 }
 
