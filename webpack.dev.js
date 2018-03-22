@@ -51,7 +51,7 @@ module.exports = {
         })
       },
       {
-        test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        test: /\.(png|jpg|gif|jpeg|svg)$/,
         loader: "file-loader",
         options: {
           name: "assets/media/[name].[ext]",

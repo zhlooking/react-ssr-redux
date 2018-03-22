@@ -1,9 +1,9 @@
 
-## React SSR Demo
-ReactRouter4 + express + axios + styled-components
+## React Redux SSR Demo
+ReactRouter4 + Express + Axios + Redux + Scss + Image loader
 
-## Dev Steps
-### For Development
+## For Development
+### make sure npm is installed
 1. `npm install`
 2. `npm run dev`
 3. `open http://localhost:3000`
