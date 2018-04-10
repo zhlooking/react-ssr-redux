@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "NODE_ENV=dev DEPLOY_ENV=dev webpack -w --config webpack.dev.js && nodemon ./dist/server",
+    "dev": "NODE_ENV=dev DEPLOY_ENV=dev webpack -w --config webpack.dev.js & nodemon ./dist/server",
     "build": "npm run clean && NODE_ENV=prod DEPLOY_ENV=prod webpack --config webpack.prod.js ",
     "start": "nodemon ./dist/server",
     "deploy": "npm run build && npm run start"
